@@ -34,12 +34,8 @@ function playRound(userSelection, compSelection){
     }
 }
 
-function game(){
-    for(let i = 0; i < 5; i++){
-    let userSelection = prompt('Rock, Paper, or Scissors?', 'rock').toLowerCase();
-    let compSelection = computerPlay();
-    playRound(userSelection, compSelection);
-    } if (score == compScore){
+function winner(score, compScore){
+    if (score == compScore){
         return 'It\'s a tie. Play again!';
     } else if (score < compScore){
         return 'Oh, no... You lose!';
@@ -47,5 +43,11 @@ function game(){
         return 'Congratulations! You win!';
     }
 }
-
+function game(){
+    for(let i = 0; i < 5; i++){
+    let userSelection = prompt('Rock, Paper, or Scissors?', 'rock').toLowerCase();
+    let compSelection = computerPlay();
+    playRound(userSelection, compSelection);   
+}   return winner(score, compScore);
+}
 console.log(game());
