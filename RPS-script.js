@@ -45,9 +45,10 @@ function winner(score, compScore){
 }
 function game(){
     for(let i = 0; i < 5; i++){
-    let userSelection = prompt('Rock, Paper, or Scissors?', 'rock').toLowerCase();
-    let compSelection = computerPlay();
-    playRound(userSelection, compSelection);   
-}   return winner(score, compScore);
+        let userSelection = prompt('Rock, Paper, or Scissors?', 'rock').toLowerCase();
+        let compSelection = computerPlay();
+        playRound(userSelection, compSelection);   
+    }
+    return winner(score, compScore);
 }
 console.log(game());
