@@ -1,0 +1,36 @@
+body{
+    background-color: #ccc;
+
+}
+
+.selections,
+.results{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.selection{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 6rem;
+    transition: 100ms;
+}
+
+.selection:hover{
+    transform: scale(1.2);
+}
+
+.results{
+    font-size: 2rem;
+    border: 8px, solid, black;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    border: 10px, solid, black;
+    font-size: 22px;
+}
