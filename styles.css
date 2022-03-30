@@ -7,7 +7,7 @@ body{
 .results{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .selection{
@@ -25,7 +25,7 @@ body{
 
 .results{
     font-size: 2rem;
-    border: 8px, solid, black;
+    border: 2px solid black;
 }
 
 .message{
