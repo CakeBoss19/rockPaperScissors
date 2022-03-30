@@ -16,12 +16,18 @@ function win(){
     userScore++;
     userScore_span.textContent = userScore;
     message_div.textContent = 'You win!';
+    if(userScore == 5){
+        restartGame();
+    }
 }
 
 function lose(){
     compScore++;
     compScore_span.textContent = compScore;
     message_div.textContent = 'You lose!';
+    if(compScore == 5){
+        restartGame();
+    }
 }
 
 function draw(){
@@ -49,6 +55,14 @@ function game(userSelection){
         
     }
 } 
+
+function restartGame(){
+    userScore = 0;
+    compScore = 0;
+    message_div.textContent = 'Let\'s Play Again!'
+    userScore_span.textContent = userScore;
+    compScore_span.textContent = compScore;
+}
 
 btnR.addEventListener('click', () => {
     game('rock');
